@@ -1,0 +1,19 @@
+#change the hardstatus settings to give an window list at the bottom of the                                                                        
+#screen, with the time and date and with the current window highlighted                                                                            
+hardstatus alwayslastline                                                                                                                          
+#hardstatus string '%{= cK}%-Lw%{= KW}%50>%n%f* %t%{= cK}%+Lw%< %{= kG}'
+hardstatus string '%{cK}ben-work-desktop %{= KG}%-Lw%{= Gk}%50>%n%f* %t%{= KG}%+Lw'
+
+attrcolor b ".I"
+
+startup_message off
+termcapinfo xterm 'Co#256:AB=\E[48=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+# ti@:te@
+autodetach on
+vbell on
+nonblock on
+defutf8 on
+utf8 on on
+
+term screen-256color
